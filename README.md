@@ -23,10 +23,6 @@ YADTQ is a robust distributed task queue system built from the ground up in Pyth
 
 The system is designed with decoupled components to ensure scalability and maintainability.
 
-<p align="center">
-  <img src="https_your_image_link_here" alt="YADTQ Architecture Diagram" width="700"/>
-</p>
-
 1.  **Client:** The entry point for the user. It submits tasks to the Kafka message broker and queries Redis for results.
 2.  **Kafka (Message Broker):** Ingests tasks and distributes them across different partitions. This allows multiple workers to consume and process tasks in parallel.
 3.  **Workers:** The core processing units. Each worker is a multi-threaded Python application that:
@@ -46,8 +42,6 @@ As a lead contributor on this team project, my primary responsibilities were arc
 ## Demo: Submitting a Task
 
 Here is a simple demonstration of the client's functionality.
-
-![Demo GIF showing task submission and result retrieval](https_your_gif_link_here)
 
 The client API is designed to be intuitive and simple:
 ```python
